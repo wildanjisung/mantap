@@ -20,6 +20,9 @@
     <!-- icon from fotnawesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
+    <!-- custom font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   </head>
 
   <body>
@@ -92,96 +95,104 @@
 
     <div class="main-text mx-auto">
       <div class="col-12 text-center">
-        <h1 class="display-3 text-shadow">kecamatanbatu.batukota.go.id</h1>
-        <h1 class="text-shadow">Website Resmi Pemerintah Kecamatan Batu</h1>
+        <img src="img/atribute/logo.png" alt="">
+        <h1 class="display-3 text-shadow font-hand">kecamatanbatu.batukota.go.id</h1>
+        <h1 class="text-shadow font-hand">Website Resmi Pemerintah Kecamatan Batu</h1>
+        
+        <!-- input search -->
+        <div class="row col-8 mx-auto d-block">
+
+          <div class="input-group input-group-sm mb-3">
+            <input type="text" id="inputsearch" name="name" class="form-control" placeholder="Cari">        
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+
+        </div>
+      
+        <!-- mulai menu -->
         <div class="row">
-          
           <div class="dropdown show ml-auto d-block">
-            <a class="btn btn-hover dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="p-4 icon-background">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
                   <i class="fas fa-laptop fa-3x "></i>
                 </div>
               </div>
-              <h4><strong>Layanan <br> Perizinan</strong></h4>
             </a>
-
-            <!-- <a href="#" class="btn btn-md btn-hover btn-default">Default</a>
-            <a href="#" class="btn btn-md btn-hover btn-primary">Primary</a> 
-            <a href="#" class="btn btn-md btn-hover btn-info">Info</a> 
-            <a href="#" class="btn btn-md btn-hover btn-warning">Warning</a>
-            <a href="#" class="btn btn-md btn-hover btn-danger">Danger</a>
-            <a href="#" class="btn btn-md btn-hover btn-success">Success</a> -->
-
+            <h4 class="txt-clear"><strong>Layanan <br> Perizinan</strong></h4>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Izin Mendirikan Bangunan</a>
+              <a class="dropdown-item" href="#">Izin Usaha Mikro dan Kecil</a>
+              <a class="dropdown-item" href="#">Izin Reklame UMK</a>
             </div>
           </div>
 
           <div class="dropdown show ">
-            <a class="btn dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="p-4 icon-background">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
                   <i class="far fa-file-alt fa-3x"></i>
                 </div>
               </div>
-              <h4><strong>Layanan <br> Publik</strong></h4>
             </a>
+            <h4 class="txt-clear"><strong>Layanan <br> Publik</strong></h4>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Layanan Kependudukan</a>
+              <a class="dropdown-item" href="#">Layanan Pajak</a>
+              <a class="dropdown-item" href="#">Layanan Badan Usaha</a>
             </div>
           </div>
 
           <div class="dropdown show ">
-            <a class="btn dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="p-4 icon-background">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
                   <i class="far fa-newspaper fa-3x"></i>
                 </div>
               </div>
-              <h4><strong>Berita <br>-</strong></h4>
             </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <h4 class="txt-clear"><strong>Berita <br>-</strong></h4>
+            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </div>
 
           <div class="dropdown show ">
-            <a class="btn dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="p-4 icon-background">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
                   <i class="fas fa-chart-bar fa-3x"></i>
                 </div>
               </div>
-              <h4><strong>Statistik <br>-</strong></h4>
             </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <h4 class="txt-clear"><strong>Statistik <br>-</strong></h4>
+            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </div>
 
           <div class="dropdown show mr-auto d-block">
-            <a class="btn dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="p-4 icon-background">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
                   <i class="far fa-comments fa-3x"></i>
                 </div>
               </div>
-              <h4><strong>Pengaduan <br> Masyarakat</strong></h4>
             </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <h4 class="txt-clear"><strong>Pengaduan <br> Masyarakat</strong></h4>
+            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </div>
 
         </div>
@@ -195,39 +206,6 @@
     <!-- popper for dropdown menu -->
     <script src="vendor/popper/popper.js"></script>
 
-    <!-- efek rimi -->
-    <script>
-      //  The function to change the class
-      var changeClass = function (r,className1,className2) {
-        var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
-        if( regex.test(r.className) ) {
-          r.className = r.className.replace(regex,' '+className2+' ');
-          }
-          else{
-          r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
-          }
-          return r.className;
-      };  
-
-      //  Creating our button in JS for smaller screens
-      var menuElements = document.getElementById('menu');
-      menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
-
-      //  Toggle the class on click to show / hide the menu
-      document.getElementById('menutoggle').onclick = function() {
-        changeClass(this, 'navtoogle active', 'navtoogle');
-      }
-
-      // http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
-      document.onclick = function(e) {
-        var mobileButton = document.getElementById('menutoggle'),
-          buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
-
-        if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
-          changeClass(mobileButton, 'navtoogle active', 'navtoogle');
-        }
-      }
-    </script>
   </body>
 
 </html>

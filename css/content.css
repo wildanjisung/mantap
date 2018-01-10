@@ -1,7 +1,18 @@
+/*custom font*/
+  .font-hand{
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Courgette', cursive;
+  }
+  /* untuk tulisan "kecamatanbatu.batukota.go.id
+  Website Resmi Pemerintah Kecamatan Batu" */
+  .text-shadow{
+    text-shadow: 4px 4px 4px #111;
+  }
+
 /*agar bisa menumpuk diatas carousel*/
 .main-text{
     position: absolute;
-    top: 20%;
+    top: 3%;
     width: 100%;
     color: #FFF;
 }
@@ -12,26 +23,52 @@
     min-width: 88px;
     min-height: 88px;
 }
-/* untuk tulisan "kecamatanbatu.batukota.go.id
-Website Resmi Pemerintah Kecamatan Batu" */
-.text-shadow{
-    text-shadow: 2px 2px #000;
-}
 .text-color{
     color: #222;
 }
 /*efek hover*/
-.btn-clear
+.efc-clear
+{
+    color: #FFF;
+    background-color: rgba(255,255,255,0.3);
+    border-color: transparent;
+    margin-right: 15px;
+}
+.efc-clear:hover
+{
+    color: #000;
+    background-color: rgba(255,255,255,0.5);
+}
+.txt-clear
 {
     color: #FFF;
     background-color: transparent;
     border-color: transparent;
     margin-right: 15px;
 }
-.btn-clear:hover
+.txt-clear:hover
 {
-    color: #000;
-    background-color: #FFF;
+    color: #FFF;
+    background-color: transparent;
+}
+.efc-shadow:focus{
+  box-shadow: none;
+}
+
+.dropdown-menu{
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+.dropdown-item{
+    background-color: rgba(255,255,255,0.6);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/*hilangkan segitiga  dibawah dropdown*/
+.dropdown-toggle::after {
+    content: none;
 }
 /*---------------------*/
 /* hover efect gagal*/
