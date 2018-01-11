@@ -6,12 +6,90 @@
 
 body {
   /*padding-top: 54px;*/
-  padding-top: 83px;
+  padding-top: 120px;
 }
 
 @media (min-width: 992px) {
   body {
     /*padding-top: 56px;*/
-    padding-top: 84px;
+    padding-top: 120px;
   }
 }
+
+/*navigation*/
+	.font-hand{
+	/*font-family: 'Pacifico', cursive;*/
+	font-family: 'Courgette', cursive;
+	}
+	.nav-logo{
+		max-width: 70px;
+		max-height: 70px;
+	}
+	.txt-logo{
+		font-size: 0.8rem;
+	}
+	
+	/*efek hover*/
+	.efc-clear
+	{
+	    color: #999;
+	    /*background-color: rgba(0,0,0,0.3);*/
+	    background-color: rgba(0,0,0,1);
+	    border-color: transparent;
+	    margin-right: 15px;
+	}
+	.efc-clear:hover
+	{
+	    color: #000;
+	    background-color: rgba(0,0,0,0.2);
+	}
+	.txt-clear
+	{
+	    color: #000;
+	    background-color: transparent;
+	    border-color: transparent;
+	    margin-right: 15px;
+	    font-size: 0.7rem;
+	}
+	.txt-clear:hover
+	{
+	    color: #000;
+	    background-color: transparent;
+	}
+	.efc-shadow:focus{
+	  box-shadow: none;
+	}
+
+	.dropdown-menu{
+	    background-color: rgba(255,255,255,0);
+	    border: none;
+	}
+	.dropdown-item{
+	    background-color: rgba(255,255,255,0.6);
+	}
+	.dropdown-item:focus, .dropdown-item:hover {
+	    background-color: rgba(255,255,255,0.3);
+	}
+
+	/*hilangkan segitiga  dibawah dropdown*/
+	.dropdown-toggle::after {
+	    content: none;
+	}
+	/*megamenu*/
+	.dropdown-item-atribute{
+		border-bottom: 1px solid grey;
+	}
+	.dropdown-column{
+		min-width: 420px;
+	}
+
+	/* agar ikon ada backgroundnya*/
+	.icon-background{
+	    border-radius: 50%;
+	    background: rgba(0,0,0,0.1);
+	    min-width: 32px;
+	    min-height: 32px;
+	}
+	.text-color{
+	    color: #222;
+	}
