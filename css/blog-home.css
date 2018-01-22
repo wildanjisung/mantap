@@ -16,15 +16,11 @@ body {
     padding-top: 120px;
   }
 }
-.bg-blue{ 
-	background-color: rgba(0,0,255,0.8);
-	color: #FFF;
-}
-.bg-trans{
-	background-color: rgba(255,255,255,0);
-}
 .lead-1{
 	font-size: .6rem;
+}
+.lead-2{
+	font-size: .8rem;
 }
 .big-1{
 	font-size: 1.5rem;
@@ -131,4 +127,17 @@ body {
 		padding-bottom: 20px;
 		color: #fff;
 		text-align: center;
+	}
+
+/* global background */
+	.bg-blue {
+		background-color: rgba(0, 0, 255, 0.8);
+		color: #FFF;
+	}
+
+	.bg-trans {
+		background-color: rgba(255, 255, 255, 0);
+	}
+	.bg-whitetrans {
+		background-color: rgba(255, 255, 255, 0.7);
 	}

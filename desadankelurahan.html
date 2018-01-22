@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Profile</title>
+    <title>Berita</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,90 +21,161 @@
 
     <!-- chart -->
     <script type="text/javascript">
-      window.onload = function () {
+        window.onload = function () {
 
-        var chart = new CanvasJS.Chart("chartContainer", {
-          animationEnabled: true,
-          title: {
-            text: "Prestasi siswa Batu"
-          },
-          axisY: {
-            title: ""
-          },
-          legend: {
-            cursor: "pointer",
-            itemclick: toggleDataSeries
-          },
-          toolTip: {
-            shared: true,
-            content: toolTipFormatter
-          },
-          data: [{
-            type: "bar",
-            showInLegend: true,
-            name: "Laki-Laki",
-            color: "blue",
-            dataPoints: [
-              { y: 10, label: "0-10" },
-              { y: 63, label: "11-20" },
-              { y: 34, label: "21-30" },
-              { y: 37, label: "31-40" },
-              { y: 96, label: "41-50" },
-              { y: 69, label: "51-60" },
-              { y: 81, label: "61-70" },
-              { y: 18, label: "71-80" }
-            ]
-          },
-          {
-            type: "bar",
-            showInLegend: true,
-            name: "Perempuan",
-            color: "cyan",
-            dataPoints: [
-              { y: 43, label: "0-10" },
-              { y: 36, label: "11-20" },
-              { y: 43, label: "21-30" },
-              { y: 73, label: "31-40" },
-              { y: 69, label: "41-50" },
-              { y: 96, label: "51-60" },
-              { y: 18, label: "61-70" },
-              { y: 38, label: "71-80" }
-            ]
-          }]
-        });
-        chart.render();
+            var chart1 = new CanvasJS.Chart("chartContainer1", {
+                animationEnabled: true,
+                title: {
+                    text: "Prestasi siswa Batu"
+                },
+                axisY: {
+                    title: ""
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: toggleDataSeries
+                },
+                toolTip: {
+                    shared: true,
+                    content: toolTipFormatter
+                },
+                data: [{
+                    type: "bar",
+                    showInLegend: true,
+                    name: "Laki-Laki",
+                    color: "blue",
+                    dataPoints: [
+                        { y: 10, label: "0-10" },
+                        { y: 63, label: "11-20" },
+                        { y: 34, label: "21-30" }
+                    ]
+                },
+                {
+                    type: "bar",
+                    showInLegend: true,
+                    name: "Perempuan",
+                    color: "cyan",
+                    dataPoints: [
+                        { y: 43, label: "0-10" },
+                        { y: 36, label: "11-20" },
+                        { y: 43, label: "21-30" }
+                    ]
+                }]
+            });
+            var chart2 = new CanvasJS.Chart("chartContainer2", {
+                animationEnabled: true,
+                title: {
+                    text: "Prestasi siswa Batu"
+                },
+                axisY: {
+                    title: ""
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: toggleDataSeries
+                },
+                toolTip: {
+                    shared: true,
+                    content: toolTipFormatter
+                },
+                data: [{
+                    type: "bar",
+                    showInLegend: true,
+                    name: "Laki-Laki",
+                    color: "blue",
+                    dataPoints: [
+                        { y: 10, label: "0-10" },
+                        { y: 63, label: "11-20" },
+                        { y: 34, label: "21-30" }
+                    ]
+                },
+                {
+                    type: "bar",
+                    showInLegend: true,
+                    name: "Perempuan",
+                    color: "cyan",
+                    dataPoints: [
+                        { y: 43, label: "0-10" },
+                        { y: 36, label: "11-20" },
+                        { y: 43, label: "21-30" }
+                    ]
+                }]
+            });
+            var chart3 = new CanvasJS.Chart("chartContainer3", {
+                animationEnabled: true,
+                title: {
+                    text: "Prestasi siswa Batu"
+                },
+                axisY: {
+                    title: ""
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: toggleDataSeries
+                },
+                toolTip: {
+                    shared: true,
+                    content: toolTipFormatter
+                },
+                data: [{
+                    type: "bar",
+                    showInLegend: true,
+                    name: "Laki-Laki",
+                    color: "blue",
+                    dataPoints: [
+                        { y: 10, label: "0-10" },
+                        { y: 63, label: "11-20" },
+                        { y: 34, label: "21-30" }
+                    ]
+                },
+                {
+                    type: "bar",
+                    showInLegend: true,
+                    name: "Perempuan",
+                    color: "cyan",
+                    dataPoints: [
+                        { y: 43, label: "0-10" },
+                        { y: 36, label: "11-20" },
+                        { y: 43, label: "21-30" }
+                    ]
+                }]
+            });
+            chart1.render();
+            chart2.render();
+            chart3.render();
 
-        function toolTipFormatter(e) {
-          var str = "";
-          var total = 0;
-          var str3;
-          var str2;
-          for (var i = 0; i < e.entries.length; i++) {
-            var str1 = "<span style= \"color:" + e.entries[i].dataSeries.color + "\">" + e.entries[i].dataSeries.name + "</span>: <strong>" + e.entries[i].dataPoint.y + "</strong> <br/>";
-            total = e.entries[i].dataPoint.y + total;
-            str = str.concat(str1);
-          }
-          str2 = "<strong>" + e.entries[0].dataPoint.label + "</strong> <br/>";
-          str3 = "<span style = \"color:Tomato\">Total: </span><strong>" + total + "</strong><br/>";
-          return (str2.concat(str)).concat(str3);
+            function toolTipFormatter(e) {
+                var str = "";
+                var total = 0;
+                var str3;
+                var str2;
+                for (var i = 0; i < e.entries.length; i++) {
+                    var str1 = "<span style= \"color:" + e.entries[i].dataSeries.color + "\">" + e.entries[i].dataSeries.name + "</span>: <strong>" + e.entries[i].dataPoint.y + "</strong> <br/>";
+                    total = e.entries[i].dataPoint.y + total;
+                    str = str.concat(str1);
+                }
+                str2 = "<strong>" + e.entries[0].dataPoint.label + "</strong> <br/>";
+                str3 = "<span style = \"color:Tomato\">Total: </span><strong>" + total + "</strong><br/>";
+                return (str2.concat(str)).concat(str3);
+            }
+
+            function toggleDataSeries(e) {
+                if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                    e.dataSeries.visible = false;
+                }
+                else {
+                    e.dataSeries.visible = true;
+                }
+                chart.render();
+            }
+
         }
-
-        function toggleDataSeries(e) {
-          if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-            e.dataSeries.visible = false;
-          }
-          else {
-            e.dataSeries.visible = true;
-          }
-          chart.render();
-        }
-
-      }
     </script>
     <!-- ./chart -->
+
   </head>
 
-  <body style="background-image: url('img/1.jpg')">
+ <body style="background-image: url('img/1.jpg')">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -301,83 +372,89 @@
     <!-- Page Content -->
     <div class="container">
 
-      <!-- Content -->
       <div class="row">
-
-        <!-- Profile -->
+        <!-- Berita -->
         <div class="col-9">
-          <div class="card text-center">
-            <div class="card-header pb-0 border-0">
-              <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-                    aria-selected="true">Home</a>
-                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
-                    aria-selected="false">Profile</a>
-                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
-                    aria-selected="false">Contact</a>
-                </div>
-              </nav>
-            </div>
-            <div class="card-body bg-white">
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <!-- content tabs 1 -->
-                  <strong>VISI</strong> <br>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet accusamus voluptatem 
-                  mollitia pariatur omnis soluta eius vel rem, delectus eum laboriosam neque quia magni 
-                  animi voluptates, error corporis recusandae sequi? <br> <br>
-                  <strong>MISI</strong> <br>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, quo iusto. 
-                  Assumenda iure, corporis exercitationem magnam mollitia enim eveniet labore inventore 
-                  amet aperiam. Repudiandae veritatis asperiores exercitationem, expedita ea est? <br>
-                  <!-- ./content tabs 1 -->
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <!-- content tabs 2 -->
-                  <img src="img/content/struktur_organisasi.png" alt="">
-                  <!-- ./content tabs 2 -->
-                </div>
-                <div class="tab-pane fade d-flex justify-content-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <div id="chartContainer" style="height: 400px; width: 100%;"></div>
-                </div>
-              </div>
+            <h4 class="text-white">DESA DAN KELURAHAN</h4>
+            <div class="card mb-3">
+                <div class="card-body">
 
-              <!-- <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <h5>KELURAHAN SISIR</h5>
+                    
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <h5>Pelayanan :</h5>
+                            <ul>
+                                <li>Pelayanan</li>
+                                <li>Pelayanan</li>
+                                <li>Pelayanan</li>
+                                <li>Pelayanan</li>
+                                <li>Pelayanan</li>
+                                <li>Pelayanan</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5>LAPORAN :</h5>
+                    
+                    <div class="card-deck mb-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div id="chartContainer1" style="height: 200px; width: 100%;"></div>
+                                <p class="card-text"><strong>Keterangan :</strong> <br> Lorem ipsum, dolor sit amet consectetur 
+                                    Voluptatum repellat inventore natus saepe eveniet aliquam quisquam nisi quia. Quia, 
+                                    ipsa aut!</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div id="chartContainer2" style="height: 200px; width: 100%;"></div>
+                                <p class="card-text">
+                                    <strong>Keterangan :</strong>
+                                    <br> Lorem ipsum, dolor sit amet consectetur Voluptatum repellat inventore natus saepe eveniet aliquam quisquam nisi
+                                    quia. Quia, ipsa aut!</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div id="chartContainer3" style="height: 200px; width: 100%;"></div>
+                                <p class="card-text">
+                                    <strong>Keterangan :</strong>
+                                    <br> Lorem ipsum, dolor sit amet consectetur Voluptatum repellat inventore natus saepe eveniet aliquam quisquam nisi
+                                    quia. Quia, ipsa aut!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="col-3">
-
-          <!-- Berita -->
-          <div class="card mb-3 rounded-0">
-            <h5 class="card-header">BERITA</h5>
-            <h6 class="card-header bg-blue">Berita1</h6>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla?</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">Read More &rarr;</a>
+            <!-- Berita -->
+            <div class="card mb-3 rounded-0">
+                <h5 class="card-header">BERITA</h5>
+                <h6 class="card-header bg-blue">Berita1</h6>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla?</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More &rarr;</a>
+                </div>
+                <h6 class="card-header bg-blue">Berita1</h6>
+                <div class="card-body">
+                    <h5 class="card-title">Berita2 Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla?</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More &rarr;</a>
+                </div>
+                <h6 class="card-header bg-blue">Berita1</h6>
+                <div class="card-body">
+                    <h5 class="card-title">Berita3 Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla?</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More &rarr;</a>
+                </div>
             </div>
-            <h6 class="card-header bg-blue">Berita1</h6>
-            <div class="card-body">
-              <h5 class="card-title">Berita2 Title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla?</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">Read More &rarr;</a>
-            </div>
-            <h6 class="card-header bg-blue">Berita1</h6>
-            <div class="card-body">
-              <h5 class="card-title">Berita3 Title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla?</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">Read More &rarr;</a>
-            </div>
-          </div>
-
         </div>
 
       </div>
-      <!-- /.Content -->
+      <!-- /.row -->
 
     </div>
     <!-- /.container -->
