@@ -7,13 +7,12 @@
 body {
   /*padding-top: 54px;*/
   padding-top: 120px;
-  color: 
 }
 
 @media (min-width: 992px) {
   body {
     /*padding-top: 56px;*/
-    padding-top: 120px;
+    padding-top: 100px;
   }
 }
 .bg-blue{ 
