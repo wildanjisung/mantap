@@ -28,6 +28,9 @@ body {
 .lead-2{
 	font-size: .8rem;
 }
+.lead-3{
+	font-size: .9rem;
+}
 .big-1{
 	font-size: 1.5rem;
 }
@@ -119,6 +122,7 @@ body {
 	.card{
 		background-color: rgba(255,255,255,0.7);
 		border: 0px solid rgba(0,0,0,.125);
+		size: .8 rem;
 	}
 /* carousel */
 	.carousel-inner {
