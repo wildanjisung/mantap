@@ -18,7 +18,7 @@
     <link href="css/content.css" rel="stylesheet">
 
     <!-- icon from fotnawesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- custom font -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> -->
@@ -81,6 +81,12 @@
               <p>This is a description for the third slide.</p>
             </div> -->
           </div>
+		  <div class="carousel-item" style="background-image: url('img/7.jpg')">
+<!--             <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div> -->
+          </div>
         </div>
 <!--         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,12 +101,13 @@
 
     <div class="main-text mx-auto">
       <div class="col-12 text-center">
-        <img src="img/atribute/logo.png" alt="">
-        <h1 class="display-3 text-shadow font-hand">kecamatanbatu.batukota.go.id</h1>
-        <h1 class="text-shadow font-hand">Website Resmi Pemerintah Kecamatan Batu</h1>
+        <a href="beranda.html"><img src="img/atribute/logo.png" alt=""></a>
+		
+        <h4>kecamatanbatu.batukota.go.id
+        <br>PORTAL RESMI PEMERITAHAN KECAMATAN BATU</h4>
         
         <!-- input search -->
-        <div class="row col-8 mx-auto d-block">
+        <div class="row col-8 mx-auto d-block pt-3">
 
           <div class="input-group input-group-sm mb-3">
             <input type="text" id="inputsearch" name="name" class="form-control" placeholder="Cari">        
@@ -114,20 +121,20 @@
         </div>
       
         <!-- mulai menu -->
-        <div class="row">
+        <div class="row pt-5" >
           <div class="dropdown show ml-auto d-block">
             <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
-                  <i class="fas fa-laptop fa-3x "></i>
+                  <i class="fa fa-laptop fa-3x" style="color:blue"></i>
                 </div>
               </div>
             </a>
-            <h4 class="txt-clear"><strong>Layanan <br> Perizinan</strong></h4>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Izin Mendirikan Bangunan</a>
-              <a class="dropdown-item" href="#">Izin Usaha Mikro dan Kecil</a>
-              <a class="dropdown-item" href="#">Izin Reklame UMK</a>
+            <h6 class="txt-clear">LAYANAN PERIZINAN</h6>
+            <div class="dropdown-menu pd-0" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Mendirikan Bangunan</a>
+              <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Usaha Mikro dan Kecil</a>
+              <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Reklame UMK</a>
             </div>
           </div>
 
@@ -135,65 +142,50 @@
             <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
-                  <i class="far fa-file-alt fa-3x"></i>
+                  <i class="fa fa-file-text-o fa-3x" style="color:yellow"></i>
                 </div>
               </div>
             </a>
-            <h4 class="txt-clear"><strong>Layanan <br> Publik</strong></h4>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Layanan Kependudukan</a>
-              <a class="dropdown-item" href="#">Layanan Pajak</a>
-              <a class="dropdown-item" href="#">Layanan Badan Usaha</a>
+            <h6 class="txt-clear">LAYANAN PUBLIK</h6>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Kependudukan</a>
+              <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Pajak</a>
+              <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Badan Usaha</a>
             </div>
           </div>
 
           <div class="dropdown show ">
-            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="berita.html">
               <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
-                  <i class="far fa-newspaper fa-3x"></i>
+                  <i class="fa fa-newspaper-o fa-3x" style="color:black"></i>
                 </div>
               </div>
             </a>
-            <h4 class="txt-clear"><strong>Berita <br>-</strong></h4>
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div> -->
+            <h6 class="txt-clear">BERITA</h6>
           </div>
 
           <div class="dropdown show ">
-            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="unitpelaksanateknis.html" >
               <div class="p-4 efc-clear icon-background">
-                <div class="p-3 icon-background">
-                  <i class="fas fa-chart-bar fa-3x"></i>
+               <div class="p-3 icon-background">
+                  <i class="fa fa-bar-chart fa-3x" style="color:green"></i>
                 </div>
               </div>
             </a>
-            <h4 class="txt-clear"><strong>Statistik <br>-</strong></h4>
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div> -->
-          </div>
+            <h6 class="txt-clear">STATISTIK</h6>
+           </div>
 
           <div class="dropdown show mr-auto d-block">
-            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn efc-shadow dropdown-toggle text-color mr-1 p-3" href="beranda.html">
               <div class="p-4 efc-clear icon-background">
                 <div class="p-3 icon-background">
-                  <i class="far fa-comments fa-3x"></i>
+                  <i class="fa fa-comments fa-3x" style="color:red"></i>
                 </div>
               </div>
             </a>
-            <h4 class="txt-clear"><strong>Pengaduan <br> Masyarakat</strong></h4>
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div> -->
-          </div>
+            <h6 class="txt-clear">PENGADUAN MASYARAKAT</strong</h6>
+        </div>
 
         </div>
       </div>

@@ -60,12 +60,14 @@
     border: none;
 }
 .dropdown-item{
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,1);
 }
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: rgba(255,255,255,0.3);
 }
-
+.dropdown-item-atribute{
+		border-bottom: 1px solid grey;
+	}
 /*hilangkan segitiga  dibawah dropdown*/
 .dropdown-toggle::after {
     content: none;
