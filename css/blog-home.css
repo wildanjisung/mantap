@@ -16,6 +16,13 @@ body {
     padding-top: 120px;
   }
 }
+.bg-blue{ 
+	background-color: rgba(2,32,83,1);
+	color: #FFF;
+}
+.bg-trans{
+	background-color: rgba(255,255,255,0);
+}
 .lead-1{
 	font-size: .6rem;
 }
@@ -26,10 +33,8 @@ body {
 	font-size: 1.5rem;
 }
 .my-border-bottom{
-	border-bottom: 4px solid blue;
-}
-.mt-modal{
-	top: 100px;
+	border-bottom: 8px solid;
+	border-bottom-color: rgba(2,32,83,1);
 }
 /*navigation*/
 	.font-hand{
@@ -76,14 +81,16 @@ body {
 	}
 
 	.dropdown-menu{
-	    background-color: rgba(255,255,255,0);
+	    background-color: rgba(0,0,0,0);
 	    border: none;
 	}
 	.dropdown-item{
-	    background-color: rgba(255,255,255,0.6);
+	    background-color: rgba(0,0,0,0.8);
+		color: rgba(255,255,255,0.7);
+		size:15px;
 	}
 	.dropdown-item:focus, .dropdown-item:hover {
-	    background-color: rgba(255,255,255,0.3);
+	    background-color: rgba(255,255,255,0.5);
 	}
 
 	/*hilangkan segitiga  dibawah dropdown*/
@@ -106,7 +113,7 @@ body {
 	    min-height: 32px;
 	}
 	.text-color{
-	    color: #222;
+	    color: #000;
 	}
 
 /* card */
@@ -121,7 +128,7 @@ body {
 	}
 	.carousel-caption {
 		position: absolute;
-		background-color: rgba(0,0,255,0.5);
+		background-color: rgba(2,32,83,0.8);
 		right: 70%;
 		bottom: 330px;
 		left: 0%;
@@ -130,17 +137,4 @@ body {
 		padding-bottom: 20px;
 		color: #fff;
 		text-align: center;
-	}
-
-/* global background */
-	.bg-blue {
-		background-color: rgba(0, 0, 255, 0.8);
-		color: #FFF;
-	}
-
-	.bg-trans {
-		background-color: rgba(255, 255, 255, 0);
-	}
-	.bg-whitetrans {
-		background-color: rgba(255, 255, 255, 0.7);
 	}
