@@ -8,11 +8,19 @@ body {
   /*padding-top: 54px;*/
   padding-top: 120px;
 }
-
-@media (min-width: 992px) {
+@media (max-width: 991.98px) {
+	body {
+		padding-top: 80px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1048.98px) {
+	body {
+		padding-top: 170px;
+	}
+}
+@media (min-width: 1049px) and (max-width: 1141px) {
   body {
-    /*padding-top: 56px;*/
-    padding-top: 100px;
+	padding-top: 150px;
   }
 }
 .bg-blue{ 
@@ -50,11 +58,16 @@ body {
 	.txt-logo{
 		font-size: 0.8rem;
 	}
+/* responsive navigation */
+	.navbar-nav > .fa {
+		font-size: 0.5rem;	
+	}
 	
-	/*efek hover*/
+/*efek hover*/
+/* f8f9fa */
 	.efc-clear
 	{
-	    color: #999;
+	    color: #f8f9fa;
 	    /*background-color: rgba(0,0,0,0.3);*/
 	    background-color: rgba(0,0,0,1);
 	    border-color: transparent;
@@ -62,7 +75,7 @@ body {
 	}
 	.efc-clear:hover
 	{
-	    color: #000;
+	    color: #FFF;
 	    background-color: rgba(0,0,0,0.2);
 	}
 	.txt-clear
@@ -133,7 +146,7 @@ body {
 		position: absolute;
 		background-color: rgba(2,32,83,0.8);
 		right: 70%;
-		bottom: 330px;
+		bottom: 270px;
 		left: 0%;
 		z-index: 10;
 		padding-top: 20px;

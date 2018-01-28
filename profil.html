@@ -17,7 +17,8 @@
     <link href="css/blog-home.css" rel="stylesheet">
 
     <!-- for icon -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script> -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 
     <!-- chart -->
     <script type="text/javascript">
@@ -112,176 +113,212 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <!-- <div class="container"> -->
-        <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mr-auto d-flex h-100 align-items-center">
-
-            <li class="nav-item active">
-              <a class="nav-link" href="beranda.html">
-                <span class="row">
-                  <span>
-                    <img src="img/atribute/logo.png" alt="Logo Batu" class="nav-logo">
-                  </span>
-                  <strong class="d-flex align-items-center txt-logo">
-                    webkecamatanbatu.go.id <br>
-                    WEBSITE RESMI KECAMATAN BATU
-                  </strong>
+      <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
+      <button class="navbar-toggler m-2 bg-transparant" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto d-flex h-100 align-items-center">
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="beranda.html">
+              <span class="row">
+                <span>
+                  <img src="img/atribute/logo.png" alt="Logo Batu" class="nav-logo">
                 </span>
-              </a>
-            </li>
-
-            <div class="dropdown show ml-4">
-              <a class="btn efc-shadow dropdown-toggle text-color" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong class="d-flex align-items-center txt-logo">
+                  webkecamatanbatu.go.id
+                  <br> WEBSITE RESMI KECAMATAN BATU
+                </strong>
+              </span>
+            </a>
+          </li>
+    
+          <div class="dropdown d-flex flex-column show">
+            <a class="btn efc-shadow dropdown-toggle px-0" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <div class="btn d-none d-sm-none d-md-none d-lg-block">
                 <div class="p-2 efc-clear icon-background">
                   <div class="p-1 icon-background">
-				  <i class="fa fa-bank" style="color:#f8f9fa"></i>
-                  </div>
-                </div>
-              </a>
-              <h6 class="txt-clear text-center"><strong>PROFIL</strong></h6>
-              <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item dropdown-item-atribute" href="profil.html">Visi dan Misi</a>
-                <a class="dropdown-item dropdown-item-atribute" href="profil.html">Struktur Organisasi</a>
-                <a class="dropdown-item dropdown-item-atribute" href="profil.html">Demografi</a>
-              </div>
-            </div>
-
-            <div class="dropdown show">
-              <a class="btn efc-shadow dropdown-toggle text-color" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="p-2 efc-clear icon-background">
-                  <div class="p-1 icon-background">
-					<i class="fa fa-laptop" style="color:#f8f9fa"></i>
-					</div>
-                </div>
-              </a>
-              <h6 class="txt-clear text-center"><strong>PELAYANAN</strong></h6>
-              <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
-                <div class="row dropdown-column">
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Mendirikan Bangunan</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Usaha Mikro dan Kecil</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Reklame UMK</a>
-                  </div>
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Kependudukan</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Pajak</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Badan Usaha</a>
+                    <i class="fa fa-bank"></i>
                   </div>
                 </div>
               </div>
+              <h6 class="txt-clear text-center my-0">
+                <strong>PROFIL</strong>
+              </h6>
+            </a>
+            <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item dropdown-item-atribute" href="profil.html">Visi dan Misi</a>
+              <a class="dropdown-item dropdown-item-atribute" href="profil.html">Struktur Organisasi</a>
+              <a class="dropdown-item dropdown-item-atribute" href="profil.html">Demografi</a>
             </div>
-
-            <div class="">
-              <a class="btn efc-shadow text-color" href="infopublik.html" role="button">
+          </div>
+    
+          <div class="dropdown d-flex flex-column show">
+            <a class="btn efc-shadow dropdown-toggle px-0" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <div class="btn d-none d-sm-none d-md-none d-lg-block">
                 <div class="p-2 efc-clear icon-background">
                   <div class="p-1 icon-background">
-                    <i class="fa fa-calendar" style="color:#f8f9fa"></i>
-                  </div>
-                </div>
-              </a>
-              <h6 class="txt-clear text-center"><strong>INFO PUBLIK</strong></h6>
-            </div>
-
-            <div class="dropdown show">
-              <a class="btn efc-shadow dropdown-toggle text-color" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="p-2 efc-clear icon-background">
-                  <div class="p-1 icon-background">
-                    <i class="fa fa-newspaper-o" style="color:#f8f9fa"></i>
-                  </div>
-                </div>
-              </a>
-              <h6 class="txt-clear text-center"><strong>BERITA</strong></h6>
-              <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
-                <div class="row dropdown-column">
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="berita.html">Umum</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="berita.html">Kegiatan</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="berita.html">Politik</a>
-                  </div>
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="berita.html">Pendidikan</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="berita.html">Kebudayaan</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="berita.html">Olahraga</a>
+                    <i class="fa fa-laptop"></i>
                   </div>
                 </div>
               </div>
+              <h6 class="txt-clear text-center my-0">
+                <strong>PELAYANAN</strong>
+              </h6>
+            </a>
+            <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
+              <div class="row dropdown-column">
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Mendirikan Bangunan</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Usaha Mikro dan Kecil</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Izin Reklame UMK</a>
+                </div>
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Kependudukan</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Pajak</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="pelayananpublik.html">Layanan Badan Usaha</a>
+                </div>
+              </div>
             </div>
-
-            <div class="dropdown show">
-              <a class="btn efc-shadow dropdown-toggle text-color" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </div>
+    
+          <div class="">
+            <a class="btn efc-shadow text-color px-0" href="infopublik.html" role="button">
+              <div class="btn d-none d-sm-none d-md-none d-lg-block">
                 <div class="p-2 efc-clear icon-background">
                   <div class="p-1 icon-background">
-                    <i class="fa fa-cogs" style="color:#f8f9fa"></i>
+                    <i class="fa fa-calendar"></i>
                   </div>
                 </div>
-              </a>
-              <h6 class="txt-clear text-center"><strong>UPT</strong></h6>
-              <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
-                <div class="row dropdown-column">
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">UPT Pendidikan</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">UPT Puskesmas</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Dinas Pertanian</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPJS</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPN</a>
-                  </div>
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Polsek</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Koramil</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Bina Marga</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPBD</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPS</a>
-                  </div>
-                </div>
-
               </div>
-            </div>
-
-            <div class="dropdown show">
-              <a class="btn efc-shadow dropdown-toggle text-color" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <h6 class="txt-clear text-center my-0">
+                <strong>INFO PUBLIK</strong>
+              </h6>
+            </a>
+            <!-- <a class="btn efc-shadow text-color" href="infopublik.html" role="button">
+                        <div class="p-2 efc-clear icon-background">
+                          <div class="p-1 icon-background">
+                          </div>
+                        </div>
+                      </a> -->
+          </div>
+    
+          <div class="dropdown d-flex flex-column show">
+            <a class="btn efc-shadow dropdown-toggle px-0" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <div class="btn d-none d-sm-none d-md-none d-lg-block">
                 <div class="p-2 efc-clear icon-background">
                   <div class="p-1 icon-background">
-                    <i class="fa fa-users" style="color:#f8f9fa"></i>
+                    <i class="fa fa-newspaper-o"></i>
                   </div>
                 </div>
-              </a>
-              <h6 class="txt-clear text-center"><strong>DESA</strong></h6>
-              <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
-                <div class="row dropdown-column">
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Oro-oro Ombo</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Pesanggrahan</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Sidomulyo</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Sumberejo</a>
-                  </div>
-                  <div class="col-6 p-0">
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Ngaglik</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Sisir</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Songgokerto</a>
-                    <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Temas</a>
-                  </div>
+              </div>
+              <h6 class="txt-clear text-center my-0">
+                <strong>BERITA</strong>
+              </h6>
+            </a>
+            <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
+              <div class="row dropdown-column">
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="berita.html">Umum</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="berita.html">Kegiatan</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="berita.html">Politik</a>
+                </div>
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="berita.html">Pendidikan</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="berita.html">Kebudayaan</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="berita.html">Olahraga</a>
                 </div>
               </div>
             </div>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Cari...">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
-                </span>
+          </div>
+    
+          <div class="dropdown d-flex flex-column show">
+            <a class="btn efc-shadow dropdown-toggle px-0" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <div class="btn d-none d-sm-none d-md-none d-lg-block">
+                <div class="p-2 efc-clear icon-background">
+                  <div class="p-1 icon-background">
+                    <i class="fa fa-cogs"></i>
+                  </div>
+                </div>
               </div>
-            </li>
-          </ul>
-        </div>
+              <h6 class="txt-clear text-center my-0">
+                <strong>UPT</strong>
+              </h6>
+            </a>
+            <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
+              <div class="row dropdown-column">
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">UPT Pendidikan</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">UPT Puskesmas</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Dinas Pertanian</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPJS</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPN</a>
+                </div>
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Polsek</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Koramil</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">Bina Marga</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPBD</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="unitpelaksanateknis.html">BPS</a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="dropdown d-flex flex-column show">
+            <a class="btn efc-shadow dropdown-toggle px-0" href="beranda.html" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <div class="btn d-none d-sm-none d-md-none d-lg-block">
+                <div class="p-2 efc-clear icon-background">
+                  <div class="p-1 icon-background">
+                    <i class="fa fa-users"></i>
+                  </div>
+                </div>
+              </div>
+              <h6 class="txt-clear text-center my-0">
+                <strong>DESA</strong>
+              </h6>
+            </a>
+            <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuLink">
+              <div class="row dropdown-column">
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Oro-oro Ombo</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Pesanggrahan</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Sidomulyo</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Desa Sumberejo</a>
+                </div>
+                <div class="col-6 p-0">
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Ngaglik</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Sisir</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Songgokerto</a>
+                  <a class="dropdown-item dropdown-item-atribute" href="desadankelurahan.html">Kelurahan Temas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Cari...">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
       <!-- </div> -->
     </nav>
 
-       
     <!-- Page Content -->
     <div class="container">
 
